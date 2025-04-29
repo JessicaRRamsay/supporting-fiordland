@@ -584,6 +584,7 @@ footer-text {
 .whatsapp-button:hover {
     background-color: rgb(28, 30, 33);
     color: white;
+    border: none;
 }
 
 .button-wrapper {
