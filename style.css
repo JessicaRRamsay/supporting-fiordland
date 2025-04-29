@@ -171,6 +171,10 @@ footer-text {
     padding: 0;
 }
 
+.nav-links a:hover {
+    color: #96c9ae;
+}
+
 .image-row {
     display: flex;
     justify-content: space-between;
@@ -565,3 +569,23 @@ footer-text {
     height: 426px;
 }
 
+.whatsapp-button {
+    margin-left: 40px;
+    background-color: #25d366;
+    font-family: Montserrat;
+    padding: 11px 18px;
+    font-size: 16px;
+    border-radius: 50px;
+    color: rgb(28, 30, 33);
+    text-decoration: none;
+    border: 1px solid rgb(28, 30, 33);
+}
+
+.whatsapp-button:hover {
+    background-color: rgb(28, 30, 33);
+    color: white;
+}
+
+.button-wrapper {
+    margin: 35px 0;
+}
