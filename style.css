@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #0e563b;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 5px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #e8f0ee;
+    text-decoration: none;
+    padding: 25px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    min-width: 0;
+    gap: 15px;
+    padding: 5px;
+    text-align: center;
+}
+
+.images-section {
+    text-align: center;
+    gap: 5px;
+    padding: 5px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.grey-background {
+    padding: 18px;
+    background-color: #ccdfe8;
+}
+
+.blue-background {
+    background-color: #dfeae7;
+    padding: 18px;
+}
+
+.photographer-credit {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #0d1222;
+    opacity: 0.7;
+    color: #e8f0ee;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: Montserrat;
+    z-index: 1;
+}
+
+home-heading {
+    font-family: montserrat;
+    color: #0d1222;
+    font-size: 40px;
+    font-weight: bold;
+    display: block;
+    margin: 25px 15px;
+    margin-right: 100px;
+}
+
+home-text {
+    font-family: Montserrat;
+    color: #0d1222;
+    font-size: 20px;
+    display: block;
+    margin: 25px 15px;
+    margin-right: 500px;
+}
+
+h1 {
+    font-family: montserrat;
+    color: #0d1222;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    font-size: 40px;
+    margin-left: 35px;
+    margin-right: 500px;
+}
+
+h2 {
+    font-family: Montserrat;
+    color: #0d1222;
+    font-size: 35px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-left: 35px;
+    margin-right: 500px;
+}
+
+h3 {
+    font-family: Montserrat;
+    color: #0d1222;
+    font-size: 30px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-left: 35px;
+    margin-right: 500px;
+}
+
+p {
+    font-family: Montserrat;
+    color: #0d1222;
+    font-size: 20px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-left: 35px;
+    margin-right: 500px;
+    padding: 4px;
+}
+
+ul {
+    font-family: Montserrat;
+    color: #0d1222;
+    font-size: 20px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-left: 35px;
+    margin-right: 500px;
+}
+
+li {
+    padding: 5px;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    background-color: #0e563b;
+}
+
+footer-text {
+    color: #e8f0ee;
+    font-size: 17px;
+    font-family: Montserrat;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.image-row:first-of-type .image-container:first-child {
+    flex: 2;
+}
+
+.image-row:first-of-type .image-container:last-child {
+    flex: 1;
+}
+
+.image-row:last-of-type .image-container:first-child {
+    flex: 1;
+}
+
+.image-row:last-of-type .image-container:last-child {
+    flex: 2;
+}
+
+.home-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.general-img-1 {
+    width: 600px;
+    height: 400px;
+}
+
+.general-img-2 {
+    width: 340px;
+    height: 530px;
+}
+
+.general-img-3 {
+    width: 760px;
+    height: 400px;
+}
+
+
+.discover-banner {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    height: 350px;
+    background-color: #0d1222;
+}
+
+.discover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.discover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 28%;
+}
+
+.discover-content {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    background: linear-gradient(90deg,
+            rgba(13, 18, 34, 0.85) 0%,
+            rgba(13, 18, 34, 0.7) 40%,
+            rgba(13, 18, 34, 0) 100%);
+    color: #e8f0ee;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.discover-content h1 {
+    color: #e8f0ee;
+    margin: 0 0 15px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.discover-content p {
+    color: #e8f0ee;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 17.6px;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+
+
+.challenges-banner {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    height: 350px;
+    background-color: #0d1222;
+}
+
+.challenges-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.challenges-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 58%;
+}
+
+.challenges-content {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    background: linear-gradient(90deg,
+            rgba(13, 18, 34, 0.85) 0%,
+            rgba(13, 18, 34, 0.7) 40%,
+            rgba(13, 18, 34, 0) 100%);
+    color: #e8f0ee;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.challenges-content h1 {
+    color: #e8f0ee;
+    margin: 0 0 15px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.challenges-content p {
+    color: #e8f0ee;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 17.6px;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+
+.support-banner {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    height: 350px;
+    background-color: #0d1222;
+}
+
+.support-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.support-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+}
+
+.support-content {
+    position: relative;
+    z-index: 1;
+    padding: 40px;
+    background: linear-gradient(90deg,
+            rgba(13, 18, 34, 0.85) 0%,
+            rgba(13, 18, 34, 0.7) 40%,
+            rgba(13, 18, 34, 0) 100%);
+    color: #e8f0ee;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.support-content h1 {
+    color: #e8f0ee;
+    margin: 0 0 15px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.support-content p {
+    color: #e8f0ee;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 17.6px;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+
+.general-img-4 {
+    width: 680px;
+    height: 380px;
+}
+
+.walking-track-img {
+    width: 680px;
+    height: 380px;
+}
+
+.hiking-content p {
+    margin-bottom: 20px;
+}
+
+.general-img-5 {
+    width: 760px;
+    height: 460px;
+}
+
+.general-img-6 {
+    width: 600px;
+    height: 460px;
+}
+
+.general-img-7 {
+    width: 480px;
+    height: 530px;
+}
+
+.general-img-8 {
+    width: 540px;
+    height: 530px;
+}
+
+.litter-img {
+    width: 500px;
+    height: 400px;
+}
+
+.transport-img {
+    width: 530px;
+    height: 400px;
+}
+
+.fishing-img {
+    width: 680px;
+    height: 426px;
+}
+
+.mining-img {
+    width: 680px;
+    height: 426px;
+}
+
+.problems-img-1 {
+    width: 330px;
+    height: 400px;
+}
+
+.problems-img-2 {
+    width: 610px;
+    height: 500px;
+}
+
+.problems-img-3 {
+    width: 350px;
+    height: 500px;
+}
+
+.problems-img-4 {
+    width: 400px;
+    height: 500px;
+}
+
+.problems-img-5 {
+    width: 675px;
+    height: 426px;
+}
+
+
+.problems-img-7 {
+    width: 685px;
+    height: 426px;
+}
+
+.problems-img-8 {
+    width: 680px;
+    height: 480px;
+}
+
+.problems-img-9 {
+    width: 680px;
+    height: 480px;
+}
+
+.planting-img {
+    width: 453.3px;
+    height: 453.3px;
+}
+
+.restoring-habitat-img {
+    width: 453.3px;
+    height: 453.3px;
+}
+
+.growth-plant-img {
+    width: 453.3px;
+    height: 453.3px;
+}
+
+.rat-wood-img {
+    width: 680px;
+    height: 400px;
+}
+
+.learning-img {
+    width: 680px;
+    height: 400px;
+}
+
+.weka-path-img {
+    width: 850px;
+    height: 469px;
+}
+
+.stay-on-track-img {
+    width: 510px;
+    height: 469px;
+}
+
+.compost-img {
+    width: 410px;
+    height: 430px;
+}
+
+.strawberry-plant-img {
+    width: 510px;
+    height: 430px;
+}
+
+.eco-transport-img {
+    width: 440px;
+    height: 430px;
+}
+
+.tour-img {
+    width: 857px;
+    height: 525px;
+}
+
+.teaching-others-img {
+    width: 503px;
+    height: 525px;
+}
+
+.logo-img {
+    width: 55px;
+    height: 55px;
+    margin-left: 20px;
+    margin-right: 0px;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+}
+
+.donation-img {
+    width: 1360px;
+    height: 500px;
+}
+
+.rock-carving-img {
+    width: 1015px;
+    height: 426px;
+}
+
+.cultural-statue-img {
+    width: 345px;
+    height: 426px;
+}
+
