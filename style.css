@@ -137,7 +137,7 @@ p {
     margin-bottom: 18px;
     margin-left: 35px;
     margin-right: 500px;
-    padding: 4px;
+    line-height: 30px;
 }
 
 ul {
@@ -148,6 +148,7 @@ ul {
     margin-bottom: 18px;
     margin-left: 35px;
     margin-right: 500px;
+    line-height: 30px;
 }
 
 li {
