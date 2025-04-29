@@ -40,8 +40,7 @@ nav {
     position: relative;
     display: inline-block;
     min-width: 0;
-    gap: 15px;
-    padding: 5px;
+    margin: 5px;
     text-align: center;
 }
 
@@ -51,6 +50,10 @@ nav {
     padding: 5px;
     margin-left: 12px;
     margin-right: 12px;
+}
+
+.images-section img {
+    border-radius: 15px;
 }
 
 .grey-background {
